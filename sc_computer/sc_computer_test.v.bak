@@ -1,0 +1,79 @@
+
+`timescale 1 ns/ 1 ns
+module sc_computer_test(out_port0, in_port0, in_port1, resetn);
+// constants                                           
+// general purpose registers
+//reg eachvec;
+// test vector input registers
+reg clock;
+reg mem_clk;
+input resetn;
+// wires                                               
+wire [31:0]  aluout;
+wire dmem_clk;
+wire imem_clk;
+wire [31:0]  inst;
+wire [31:0]  memout;
+wire [31:0]  pc;
+output [31:0]  out_port0;
+input [31:0]  in_port0;
+input [31:0]  in_port1;
+//assign out_port0 = 32'b0;
+//assign in_port0 = 32'd6;
+//assign in_port1 = 32'd3;
+// assign statements (if any)                          
+sc_computer i1 (
+// port map - connection between master ports and signals/registers   
+	.aluout(aluout),
+	.clock(clock),
+	.dmem_clk(dmem_clk),
+	.imem_clk(imem_clk),
+	.inst(inst),
+	.mem_clk(mem_clk),
+	.memout(memout),
+	.pc(pc),
+	.resetn(resetn),
+	.out_port0(out_port0),
+	.in_port0(in_port0),
+	.in_port1(in_port1)
+);
+
+//assign pc[31:0] = 32'b0;
+//assign aluout[31:0] = 32'b0;
+//assign inst[31:0] = 32'b0;
+//assign memout[31:0] = 32'b0;
+initial                                                
+begin                                                  
+// code that executes only once                        
+// insert code here --> begin 
+	//clock = 0;
+	mem_clk = 0;
+	//resetn = 0;
+	//dmem_clk = 0;
+	//imem_clk = 0;
+	//mem_clk = 0;
+   while(1)
+		#100 mem_clk <= ~mem_clk;
+// --> end                                             
+$display("Running testbench");                       
+end
+
+/*initial
+begin
+resetn = 1;
+#100;
+resetn = 0;
+#100;
+resetn = 1;
+end*/
+
+initial
+begin
+clock = 0;
+end
+
+always @ (posedge mem_clk)
+begin
+  clock <= ~clock;
+end                                                                                              
+endmodule

@@ -1,0 +1,143 @@
+module VendingMac (clk,money_input,select,confirm,init,left1,left2,left3,left4,change,out);  
+  input clk;  
+  input [2:0] money_input;  
+  input [1:4] select;  
+  input confirm,init;  
+  input [5:0] left1,left2,left3,left4;  
+  output integer change;  
+  output reg [1:4] out;  
+  reg [1:4] select_sta;  
+  reg [3:0] sta;  
+  reg isSelled;  
+  reg timeCnting;  
+  reg [8:0] time_cnt;  
+  reg [1:0] opt;  
+  integer money_sum;  
+    
+  parameter S_select=4'b0000,S_confirm=4'b0001,S_allselled=4'b0010,S_60sec=4'b0011,  
+            S_enough=4'b0100,S_requirechange=4'b0101,S_change=4'b0110,S_out=4'b0111,  
+            S_init=4'b1000;  
+    
+  initial  
+  begin  
+    sta=S_init;  
+  end  
+    
+  always @(posedge clk)  
+  begin  
+    if(clk && timeCnting)  
+      time_cnt=time_cnt+1;  
+    if(timeCnting==0)  
+      time_cnt=0;  
+  end  
+    
+  always @(posedge init or posedge clk)  
+  begin  
+    if(clk)  
+      begin  
+        case(sta)  
+          S_init:  
+          begin  
+            select_sta=4'b0000;  
+            timeCnting=0;  
+            money_sum=0;  
+            change=0;  
+            out=0;  
+            opt=0;  
+              
+            sta=S_select;  
+          end  
+          S_select:  
+          begin  
+            select_sta=select|select_sta;  
+            if(confirm || init)  
+              begin  
+                opt={confirm,init};  
+                sta=S_confirm;  
+              end  
+          end  
+          S_confirm:  
+          begin  
+            if(opt==2'b10 || opt==2'b11)  
+              sta=S_allselled;  
+            else if(opt==2'b01)  
+              begin  
+                //select_sta=4'b0000;  
+                sta=S_init;  
+              end  
+          end  
+          S_allselled:  
+          begin  
+            isSelled=0;  
+            if(select_sta[1]==1 && left1<=0)  
+              isSelled=1;  
+            if(select_sta[2]==1 && left2<=0)  
+              isSelled=1;  
+            if(select_sta[3]==1 && left3<=0)  
+              isSelled=1;  
+            if(select_sta[4]==1 && left4<=0)  
+              isSelled=1;  
+              
+            if(isSelled)  
+              begin  
+                //select_sta=4'b0000;  
+                sta=S_init;  
+              end  
+            else  
+              begin  
+                timeCnting=1;  
+                sta=S_60sec;  
+              end  
+          end  
+          S_60sec:  
+          begin  
+            if(time_cnt<500)//wait 10000 timepiece  
+              begin  
+                if(money_input!=0)//wait 10000 timepiece  
+                  begin  
+                    money_sum=money_sum+money_input;  
+                  end  
+              end  
+            else if(time_cnt==500)  
+              if(money_sum!=0)  
+                sta=S_enough;  
+            else  
+              sta=S_init;  
+          end  
+          S_enough:  
+          begin  
+            if(select_sta[1]==1)  
+              money_sum=money_sum-2;  
+            if(select_sta[2]==1)  
+              money_sum=money_sum-2;  
+            if(select_sta[3]==1)  
+              money_sum=money_sum-3;  
+            if(select_sta[4]==1)  
+              money_sum=money_sum-3;  
+                
+            if(money_sum>=0)  
+              sta=S_requirechange;  
+            else  
+              sta=S_init;  
+          end  
+          S_requirechange:  
+          begin  
+            if(money_sum==0)  
+              sta=S_out;  
+            else if(money_sum>0)  
+              sta=S_change;  
+          end  
+          S_change:  
+          begin  
+            change=money_sum;  
+            sta=S_out;  
+          end  
+          S_out:  
+          begin  
+            out=select_sta;  
+            sta=S_init;  
+          end  
+        endcase  
+      end  
+  end  
+endmodule  

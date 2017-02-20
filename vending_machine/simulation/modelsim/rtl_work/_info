@@ -1,0 +1,85 @@
+m255
+K3
+13
+cModel Technology
+Z0 dE:\learning\courses\digital\FPGA\vending_machine\simulation\modelsim
+vdisplay
+IIzP5WLESfONV0P>Hk==mD3
+V68anJZQX[zdX2bXK3dmjL3
+Z1 dE:\learning\courses\digital\FPGA\vending_machine\simulation\modelsim
+Z2 w1483600628
+Z3 8E:/learning/courses/digital/FPGA/vending_machine/vending_machine.v
+Z4 FE:/learning/courses/digital/FPGA/vending_machine/vending_machine.v
+L0 169
+Z5 OV;L;10.1d;51
+r1
+31
+Z6 !s108 1483600958.683000
+Z7 !s107 E:/learning/courses/digital/FPGA/vending_machine/vending_machine.v|
+Z8 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+E:/learning/courses/digital/FPGA/vending_machine|E:/learning/courses/digital/FPGA/vending_machine/vending_machine.v|
+Z9 o-vlog01compat -work work -O0
+Z10 !s92 -vlog01compat -work work +incdir+E:/learning/courses/digital/FPGA/vending_machine -O0
+!i10b 1
+!s100 5@Vf_QD6Dbn9XQ_6>kE6^2
+!s85 0
+!s101 -O0
+vsevenseg
+I4PPh9L>imQ`dgX=F=cJ<60
+V<kz4<ET@H::]Aoef`6B9U3
+R1
+R2
+R3
+R4
+L0 197
+R5
+r1
+31
+R6
+R7
+R8
+R9
+R10
+!i10b 1
+!s100 :I33TzzSKULln4RCYDd7N1
+!s85 0
+!s101 -O0
+vvending_machine_v
+I42kmU<_Y@l2`@0K7NJIc80
+V0LZb:kLOVoDFSgkO1d0Di3
+R1
+R2
+R3
+R4
+L0 1
+R5
+r1
+31
+R6
+R7
+R8
+R9
+R10
+!i10b 1
+!s100 4IQajnNW^RElFWR;D1SS^2
+!s85 0
+!s101 -O0
+vvending_machine_vlg_tst
+!i10b 1
+!s100 S_1zCRXL]EbaDG?4IAb1C2
+I:aA=bzAoDc74Mo[ScJ46i3
+VCeK>?SO8E6@0^;BZ2[4;n3
+R1
+w1483599827
+8E:/learning/courses/digital/FPGA/vending_machine/simulation/modelsim/vending_machine.vt
+FE:/learning/courses/digital/FPGA/vending_machine/simulation/modelsim/vending_machine.vt
+L0 28
+R5
+r1
+!s85 0
+31
+!s108 1483600959.069000
+!s107 E:/learning/courses/digital/FPGA/vending_machine/simulation/modelsim/vending_machine.vt|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+E:/learning/courses/digital/FPGA/vending_machine/simulation/modelsim|E:/learning/courses/digital/FPGA/vending_machine/simulation/modelsim/vending_machine.vt|
+!s101 -O0
+R9
+!s92 -vlog01compat -work work +incdir+E:/learning/courses/digital/FPGA/vending_machine/simulation/modelsim -O0

@@ -1,0 +1,11 @@
+
+State Machine - |vending_machine|vending_machine_v:inst|sta
+Name sta.S_select sta.S_out sta.S_change sta.S_requirechange sta.S_enough sta.S_money sta.S_allselled sta.S_init 
+sta.S_init 0 0 0 0 0 0 0 0 
+sta.S_allselled 0 0 0 0 0 0 1 1 
+sta.S_money 0 0 0 0 0 1 0 1 
+sta.S_enough 0 0 0 0 1 0 0 1 
+sta.S_requirechange 0 0 0 1 0 0 0 1 
+sta.S_change 0 0 1 0 0 0 0 1 
+sta.S_out 0 1 0 0 0 0 0 1 
+sta.S_select 1 0 0 0 0 0 0 1 

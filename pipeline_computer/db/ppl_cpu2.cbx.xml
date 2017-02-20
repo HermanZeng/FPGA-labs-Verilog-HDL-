@@ -1,0 +1,11 @@
+<?xml version="1.0" ?>
+<LOG_ROOT>
+	<PROJECT NAME="ppl_cpu2">
+		<CBX_INST_ENTRY INSTANCE_NAME="|ppl_cpu2|pipelined_computer_v1:inst|display:output_display|lpm_divide:Mod0" CBX_FILE_NAME="lpm_divide_42m.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|ppl_cpu2|pipelined_computer_v1:inst|display:output_display|lpm_divide:Mod2" CBX_FILE_NAME="lpm_divide_l3m.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|ppl_cpu2|pipelined_computer_v1:inst|pipemem:mem_stage|pipe_datamem:dmem|lpm_ram_dq_dram:dram|altsyncram:altsyncram_component" CBX_FILE_NAME="altsyncram_lpo1.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|ppl_cpu2|pipelined_computer_v1:inst|display:output_display|lpm_divide:Div2" CBX_FILE_NAME="lpm_divide_ibm.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|ppl_cpu2|pipelined_computer_v1:inst|display:output_display|lpm_divide:Mod1" CBX_FILE_NAME="lpm_divide_42m.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|ppl_cpu2|pipelined_computer_v1:inst|pipeif:if_stage|pipe_instmem:imem|lpm_rom_irom:irom|altsyncram:altsyncram_component" CBX_FILE_NAME="altsyncram_tuf1.tdf"/>
+	</PROJECT>
+</LOG_ROOT>

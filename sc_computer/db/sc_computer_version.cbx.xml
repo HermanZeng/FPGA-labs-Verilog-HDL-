@@ -1,0 +1,7 @@
+<?xml version="1.0" ?>
+<LOG_ROOT>
+	<PROJECT NAME="sc_computer_version">
+		<CBX_INST_ENTRY INSTANCE_NAME="|sc_computer_version|sc_computer_test:inst|sc_computer:i1|sc_datamem:dmem|lpm_ram_dq_dram:dram|altsyncram:altsyncram_component" CBX_FILE_NAME="altsyncram_lpo1.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|sc_computer_version|sc_computer_test:inst|sc_computer:i1|sc_instmem:imem|lpm_rom_irom:irom|altsyncram:altsyncram_component" CBX_FILE_NAME="altsyncram_tuf1.tdf"/>
+	</PROJECT>
+</LOG_ROOT>

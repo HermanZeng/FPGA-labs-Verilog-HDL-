@@ -1,0 +1,345 @@
+m255
+K3
+13
+cModel Technology
+Z0 dE:\learning\courses\digital\cpu\created\simulation\modelsim
+valu
+I9m:icPZ;`aLV>TXHzDm[b0
+VKc:bVz32gc5X2ZbjUde9O3
+Z1 dE:\learning\courses\digital\cpu\created\simulation\modelsim
+w1481542113
+8E:/learning/courses/digital/cpu/created/alu.v
+FE:/learning/courses/digital/cpu/created/alu.v
+L0 1
+Z2 OV;L;10.1d;51
+r1
+31
+Z3 o-vlog01compat -work work -O0
+Z4 !s92 -vlog01compat -work work +incdir+E:/learning/courses/digital/cpu/created -O0
+!i10b 1
+!s100 a5Wj]Fcd?Y6be7g_i8GZR1
+!s85 0
+!s108 1482477431.370000
+!s107 E:/learning/courses/digital/cpu/created/alu.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+E:/learning/courses/digital/cpu/created|E:/learning/courses/digital/cpu/created/alu.v|
+!s101 -O0
+vdff32
+IabLi3IHN@Mz`zf8LlNHLG2
+VUO7_EzIi9>SeN7M;XG9<c0
+R1
+w1305031718
+8E:/learning/courses/digital/cpu/created/dff32.v
+FE:/learning/courses/digital/cpu/created/dff32.v
+L0 1
+R2
+r1
+31
+R3
+R4
+!i10b 1
+!s100 kO><<ka`AP1cVe:dj_[ZS3
+!s85 0
+!s108 1482477431.242000
+!s107 E:/learning/courses/digital/cpu/created/dff32.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+E:/learning/courses/digital/cpu/created|E:/learning/courses/digital/cpu/created/dff32.v|
+!s101 -O0
+vio_input_mux
+IcUVSad<]nY7YPzU[IB>YJ1
+VE]W_C0AC;VoBAl[RC@dLB2
+R1
+Z5 w1481723577
+Z6 8E:/learning/courses/digital/cpu/created/io_input_reg.v
+Z7 FE:/learning/courses/digital/cpu/created/io_input_reg.v
+L0 22
+R2
+r1
+31
+Z8 !s108 1482477430.946000
+Z9 !s107 E:/learning/courses/digital/cpu/created/io_input_reg.v|
+Z10 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+E:/learning/courses/digital/cpu/created|E:/learning/courses/digital/cpu/created/io_input_reg.v|
+R3
+R4
+!i10b 1
+!s100 Q>9h4_b8X=fR9I^NCVAP@3
+!s85 0
+!s101 -O0
+vio_input_reg
+I3TojERHVRMXJNMN[<eOVI2
+Va`W>ea3e2a]BE_LJo_3@V1
+R1
+R5
+R6
+R7
+L0 1
+R2
+r1
+31
+R8
+R9
+R10
+R3
+R4
+!i10b 1
+!s100 i`VYnaVH0Hmbb0c@ozNkf1
+!s85 0
+!s101 -O0
+vio_output_reg
+IVF_k_P2i`AZ9KkVVSl@Tg2
+Ve^P`4gCaS5o2H^N?Z_Y=e0
+R1
+w1481726224
+8E:/learning/courses/digital/cpu/created/io_output_reg.v
+FE:/learning/courses/digital/cpu/created/io_output_reg.v
+L0 1
+R2
+r1
+31
+R3
+R4
+!i10b 1
+!s100 [A;0Y^LJnbjG[zkGzZ4SE3
+!s85 0
+!s108 1482477430.803000
+!s107 E:/learning/courses/digital/cpu/created/io_output_reg.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+E:/learning/courses/digital/cpu/created|E:/learning/courses/digital/cpu/created/io_output_reg.v|
+!s101 -O0
+vlpm_ram_dq_dram
+I1hofBYbegiJ<jVlOfV15c0
+V;^>UgMFOjF@EZ@A<NMAW`0
+R1
+w1481798425
+8E:/learning/courses/digital/cpu/created/lpm_ram_dq_dram.v
+FE:/learning/courses/digital/cpu/created/lpm_ram_dq_dram.v
+L0 39
+R2
+r1
+31
+R3
+R4
+!i10b 1
+!s100 N[FZd9LN8O]HAL_42z?CZ1
+!s85 0
+!s108 1482477431.465000
+!s107 E:/learning/courses/digital/cpu/created/lpm_ram_dq_dram.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+E:/learning/courses/digital/cpu/created|E:/learning/courses/digital/cpu/created/lpm_ram_dq_dram.v|
+!s101 -O0
+vlpm_rom_irom
+!i10b 1
+!s100 eHJlaU_Fj]1:_IeKjEeP10
+I5^DeOP3[7]_kYf6ec[O5f2
+V6I?:oUA0HYdli42?U:6:L0
+R1
+w1481798492
+8E:/learning/courses/digital/cpu/created/lpm_rom_irom.v
+FE:/learning/courses/digital/cpu/created/lpm_rom_irom.v
+L0 39
+R2
+r1
+!s85 0
+31
+!s108 1482477431.613000
+!s107 E:/learning/courses/digital/cpu/created/lpm_rom_irom.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+E:/learning/courses/digital/cpu/created|E:/learning/courses/digital/cpu/created/lpm_rom_irom.v|
+!s101 -O0
+R3
+R4
+vmux2x32
+I9c`Fed047d2mlAmIL^koO1
+V_8o=]o8CzEDeX@^n?a@zP3
+R1
+w1252908544
+8E:/learning/courses/digital/cpu/created/mux2x32.v
+FE:/learning/courses/digital/cpu/created/mux2x32.v
+L0 1
+R2
+r1
+31
+R3
+R4
+!i10b 1
+!s100 iZD`3F=ab0e;IoXkeo15h0
+!s85 0
+!s108 1482477430.389000
+!s107 E:/learning/courses/digital/cpu/created/mux2x32.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+E:/learning/courses/digital/cpu/created|E:/learning/courses/digital/cpu/created/mux2x32.v|
+!s101 -O0
+vmux2x5
+I`m`V3kUkf^68AV?NB1Y7>3
+Vah3g>_]Y^Qz2GXD7HR^<<3
+R1
+w1253170143
+8E:/learning/courses/digital/cpu/created/mux2x5.v
+FE:/learning/courses/digital/cpu/created/mux2x5.v
+L0 1
+R2
+r1
+31
+R3
+R4
+!i10b 1
+!s100 FPFo8Cg9l=YTLA][ko4Tl2
+!s85 0
+!s108 1482477430.583000
+!s107 E:/learning/courses/digital/cpu/created/mux2x5.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+E:/learning/courses/digital/cpu/created|E:/learning/courses/digital/cpu/created/mux2x5.v|
+!s101 -O0
+vmux4x32
+I>aE^SM^DiNJ[=NMz^kR4R1
+VM:hYY`k:C]4^:^k7d8C]M0
+R1
+w1252998688
+8E:/learning/courses/digital/cpu/created/mux4x32.v
+FE:/learning/courses/digital/cpu/created/mux4x32.v
+L0 1
+R2
+r1
+31
+R3
+R4
+!i10b 1
+!s100 8>Yjol>eMg6S=WCz8d`4o0
+!s85 0
+!s108 1482477430.248000
+!s107 E:/learning/courses/digital/cpu/created/mux4x32.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+E:/learning/courses/digital/cpu/created|E:/learning/courses/digital/cpu/created/mux4x32.v|
+!s101 -O0
+vregfile
+I;Zn0WHono3<Sgh1G0LZMl1
+VHL?YD<z4Tlb1gm`0^XW@D2
+R1
+w1481600430
+8E:/learning/courses/digital/cpu/created/regfile.v
+FE:/learning/courses/digital/cpu/created/regfile.v
+L0 1
+R2
+r1
+31
+R3
+R4
+!i10b 1
+!s100 D:cW@zU:Z1E1DJeLXDJ]k0
+!s85 0
+!s108 1482477430.057000
+!s107 E:/learning/courses/digital/cpu/created/regfile.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+E:/learning/courses/digital/cpu/created|E:/learning/courses/digital/cpu/created/regfile.v|
+!s101 -O0
+vsc_computer
+I[CkdlYYV3j?ceUL=`1nM=2
+Vc]>hC9@5eL454Re?0YThX3
+R1
+w1481779741
+8E:/learning/courses/digital/cpu/created/sc_computer.v
+FE:/learning/courses/digital/cpu/created/sc_computer.v
+L0 7
+R2
+r1
+31
+R3
+R4
+!i10b 1
+!s100 TNPH@I<Y7MNf9jYROPf0`2
+!s85 0
+!s108 1482477429.954000
+!s107 E:/learning/courses/digital/cpu/created/sc_computer.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+E:/learning/courses/digital/cpu/created|E:/learning/courses/digital/cpu/created/sc_computer.v|
+!s101 -O0
+vsc_computer_test
+IANFl3JO=_m]@<NaYN8_jM2
+VfMVIz]dc_CTM2`J3B>E2A3
+R1
+w1481802399
+8E:/learning/courses/digital/cpu/created/sc_computer_test.v
+FE:/learning/courses/digital/cpu/created/sc_computer_test.v
+L0 2
+R2
+r1
+31
+R3
+R4
+!i10b 1
+!s100 EXXcRk4WFB2[2a9[U9PKF0
+!s85 0
+!s108 1482477429.814000
+!s107 E:/learning/courses/digital/cpu/created/sc_computer_test.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+E:/learning/courses/digital/cpu/created|E:/learning/courses/digital/cpu/created/sc_computer_test.v|
+!s101 -O0
+vsc_cpu
+IW=UbmMiT3j0hFJIQazzA>0
+V:mi8;^<LZUMNBc_]kEVbj2
+R1
+w1481600043
+8E:/learning/courses/digital/cpu/created/sc_cpu.v
+FE:/learning/courses/digital/cpu/created/sc_cpu.v
+L0 1
+R2
+r1
+31
+R3
+R4
+!i10b 1
+!s100 kokM61;mKa^>al3f@0<@Q0
+!s85 0
+!s108 1482477429.669000
+!s107 E:/learning/courses/digital/cpu/created/sc_cpu.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+E:/learning/courses/digital/cpu/created|E:/learning/courses/digital/cpu/created/sc_cpu.v|
+!s101 -O0
+vsc_cu
+IB;0LO516G9WWQ3<ZHj>T02
+VAlN72Pg@l_c4ao;V0co7c3
+R1
+w1481636946
+8E:/learning/courses/digital/cpu/created/sc_cu.v
+FE:/learning/courses/digital/cpu/created/sc_cu.v
+L0 1
+R2
+r1
+31
+R3
+R4
+!i10b 1
+!s100 If6lnZ6]Hf8HdWWlb?UI<1
+!s85 0
+!s108 1482477429.533000
+!s107 E:/learning/courses/digital/cpu/created/sc_cu.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+E:/learning/courses/digital/cpu/created|E:/learning/courses/digital/cpu/created/sc_cu.v|
+!s101 -O0
+vsc_datamem
+IAjafCiaQXFDU[j6Sl<70:1
+V1l;1T9<0]ebU=]m5JjUoQ1
+R1
+w1481779744
+8E:/learning/courses/digital/cpu/created/sc_datamem.v
+FE:/learning/courses/digital/cpu/created/sc_datamem.v
+L0 1
+R2
+r1
+31
+R3
+R4
+!i10b 1
+!s100 RX?``42E=TBO]FG[gO^BE2
+!s85 0
+!s108 1482477429.305000
+!s107 E:/learning/courses/digital/cpu/created/sc_datamem.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+E:/learning/courses/digital/cpu/created|E:/learning/courses/digital/cpu/created/sc_datamem.v|
+!s101 -O0
+vsc_instmem
+Ieod2?aKT8:0NJF__3El`F1
+VkU`UIUgSeP=c3TJLN64XO2
+R1
+w1481720563
+8E:/learning/courses/digital/cpu/created/sc_instmen.v
+FE:/learning/courses/digital/cpu/created/sc_instmen.v
+L0 1
+R2
+r1
+31
+R3
+R4
+!i10b 1
+!s100 kQ?DAC;U;VzV0DAko;F8R1
+!s85 0
+!s108 1482477429.129000
+!s107 E:/learning/courses/digital/cpu/created/sc_instmen.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+E:/learning/courses/digital/cpu/created|E:/learning/courses/digital/cpu/created/sc_instmen.v|
+!s101 -O0
